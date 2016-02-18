@@ -30,7 +30,7 @@ class influxdb_service(Script):
     Execute('service influxdb start')
 
   #To restart the service, use the linux service restart command and pipe output to log file
-  def start(self, env):
+  def restart(self, env):
     import params
     env.set_params(params)
     Execute('service influxdb restart')
